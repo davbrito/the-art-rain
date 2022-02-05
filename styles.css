@@ -1,109 +1,137 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: sans-serif, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  line-height: 1.5;
+  font-display: auto;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-.tope{
-    display: flex;
-    flex-direction: column;
-    background-color: #101010;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background-color: #6f6c72;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tope {
+  display: flex;
+  flex-direction: column;
+  background-color: #101010;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .gradiente {
-    background-image: linear-gradient( 90deg,#ad46cc, #1b727e);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    width: fit-content;
+  background-image: linear-gradient(90deg, #ad46cc, #1b727e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: fit-content;
+}
+
+@font-face {
+  font-family: jesus;
+  src: url("./zuz.ttf");
+}
+
+.titulo {
+  font-family: jesus;
+  font-size: 15rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1;
+}
+
+@media (max-width: 30rem) {
+  .titulo {
+    font-size: 6rem;
   }
-@font-face{
- font-family: jesus;
- src: url("./zuz.ttf");
 }
 
-.titulo{
-    text-align: center;
-    font-family: jesus;
-    font-size: 230px;
-    color: rgb(230, 222, 236);
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.5rem;
+.subtitulo {
+  text-align: center;
+  font-family: sans-serif, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  color: rgb(230, 222, 236);
+  margin: 0;
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 25px;
 }
 
-.subtitulo{
-    text-align: center;
-    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: rgb(230, 222, 236);
-    margin: 0;
-    padding-bottom: 1.5rem;
-    letter-spacing: 0.2rem;
-    font-size: 25px;
-}
-body{
-    margin: 0;
-    background-color: #6f6c72;
-    min-height: 100%;
+.dibujo {
+  text-align: center;
+  width: 400px;
+  height: 515px;
+  object-fit: cover;
+  border-radius: 30px;
+  float: left;
+  margin-right: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
-.dibujo{
-    text-align: center;
-    width: 400px;
-    border-radius: 30px;
-    float: left;
-    margin-right: 30px;
+.presentacion {
+  color: #0e0d0d;
+  padding: 0;
 }
 
-.presentacion{
-    text-align: center;
-    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: #0e0d0d;
-    padding: 0;
+.contenido {
+  margin: 40px;
+  text-align: justify;
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
 }
 
-.contenido{
-    margin: 40px;
+.clear {
+  clear: both;
 }
 
-.clear{
-    clear: both;
+.pie {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  background-color: #272727;
+  font-size: 5rem;
+  padding: 2rem;
+  margin-top: auto;
 }
 
-.pie{
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-    background-color: #272727;
-    font-size: 5rem;
-    padding: 2rem;
-    margin-top: auto;
+.social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e0d0d;
+  text-decoration: none;
+  background-color: #6f6c72;
+  border-radius: 15px;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 1rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.social{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: #0e0d0d;
-    text-decoration: none;
-    background-color: #6f6c72;
-    border-radius: 15px;
-    width: 6rem;
-    height: 6rem;
-    margin: 0 1rem;
-    -webkit-tap-highlight-color: transparent;
-
+.social:hover {
+  background-color: #0e0d0d;
+  color: #ad46cc;
 }
 
-.social:hover{
-    background-color: #0e0d0d;
-    color: #ad46cc;
-}
-
-.social:active{
-    color: #1b727e;
+.social:active {
+  color: #1b727e;
 }
